@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TEAM MEMBER HOME PAGE</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+		     <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+	<style>
+	.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    div h3{
+	color:red;}
+body{
+ background: url(1.jpg)fixed;
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+}
+</style>	
+<style>
+
+.button5 {
+	    padding: 40px 70px;
+
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.button5 {padding: 14px 40px;}
+.button5:hover {
+    background-color:#555555 ;
+    color: black;
+}
+.button5 {width: 25%;}
+.Wrapper{
+	text-align: right;
+}
+</style>
+<style>
+.btnn{
+border-radius:25px;
+background-color:  black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: gray;
+   text-align: center;
+}
+</style>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand js-scroll-trigger" href=""><font color="white"><b>Technology</font><b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><font color="white"><b>View Task</b></font></a></li>
+        <li><a href="UploadReport.html"><font color="white"><b>Upload Report</b></font></a></li>
+        <li><a href="DateExtension.html"><font color="white"><b>Deadline Extension</b></font></a></li>
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a onclick="window.location.href='#'"><span class="glyphicon glyphicon-home" style="color:white"></span><font color="white"><b>&nbsp;Home</b> </font></a></li>
+       <li><a onclick="window.location.href='#'"><span class="glyphicon glyphicon-log-in" style="color:white"></span><font color="white"><b>&nbsp;Logout</b> </font></a></li>
+	   </ul>
+    </div>
+  </div>
+</nav>
+      <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+		
+		
+				
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 form-box">
+							<div class="col-sm-8 col-sm-offset-2 text">
+                 
+                            <div class="description">
+                           <h1 class="text-center"> <font color="black" size="7" style="Times New Roman"><b>TEAM MEMBER</b></font></h1>						   
+                            </div>
+							
+                        </div>
+						
+                            <div class="form-bottom">
+			                    <form role="form" action="" method="post" class="login-form">
+			                  	
+									 
+  						</form>
+  <form>
+    <center><br><font color="black" size="3"> <i><p><br>A Workspace Where Teams<br>Work Smarter</p></i></font></center><hr>
+<h1 class="text-center"> <font color="black" size="6" style="Times New Roman"><b>View Task</b></font></h1>	
+<center> 
+  <table class="table table-bordered" id="Table" width="300" border="2">
+  <thead>
+   <tr>
+   <th  style="background:black"></th>
+    <th style="background:black"><font color="white">Module Id</font></th>
+	<th style="background:black"><font color="white">Module Name</font></th>
+	<th style="background:black"><font color="white">Status</font></th>
+   </tr>	
+  </thead>
+  <tbody>
+   <tr>   
+   <td width="2%" style="background:white"><input type="radio" data-toggle="modal" data-target="#myModal" id="progress" name="radio" value="1"></td> 
+        <td width="2%" style="background:white">Module Id</td>
+        <td width="2%" style="background:white">Module Name</td>
+		<td width="2%" style="background:white">Status</td>
+    </tr>
+	<tr>
+	<td width="2%" style="background:white"><input type="radio" data-toggle="modal" data-target="#myModal" id="progress" name="radio" value="1"></td> 
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+		<td style="background:white">Status</td>
+    </tr>
+	<tr>
+	<td width="2%" style="background:white"><input type="radio" data-toggle="modal" data-target="#myModal" id="progress" name="radio" value="1"></td> 
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+		<td style="background:white">Status</td>
+    </tr>
+	<tr>
+	<td width="2%" style="background:white"><input type="radio" data-toggle="modal" data-target="#myModal" id="progress" name="radio" value="1"></td> 
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+		<td style="background:white">Status</td>
+    </tr>
+	</tbody>
+</table>
+</center>
+   </form>
+   </div>
+   </div>
+   </div>
+  </div>
+</div>
+<div class="footer">
+<font color="white"><p>Copyright &copy; 2018</p></font>
+</div>
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style= "width:300">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Task Description</h4>
+        </div>
+        <div class="modal-body">
+          <p>Here is your task</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="button" class="btn btn-success success" data-dismiss="modal">Ok</a>
+        </div>
+      </div>	
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>	  
+</body>
+</html>

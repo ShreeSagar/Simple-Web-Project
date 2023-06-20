@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Report Upload</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+	<style>
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    div h3{
+	color:red;}
+body{
+ background:url(hello.jpg)fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+<style>
+.button5 {
+	    padding: 40px 70px;
+
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.button5 {padding: 14px 40px;}
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+.button5 {width: 25%;}
+.Wrapper{
+	text-align: center;
+}
+</style>
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#myProgress1 {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar1 {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#myProgress2 {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar2 {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#myProgress3 {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar3 {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<style>
+.container{overflow:hidden}
+.table{float:left}
+<!.table{margin-left:10px}>
+.table input{display: block;margin-bottom:10px}
+tr{transition:all .25s ease-in-out}
+tr:hover{background-color:#EEE;cursor:pointer}
+</style>
+<style>
+.btnn{
+border-radius:25px;
+background-color:  black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: gray;
+   text-align: center;
+}
+</style>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand js-scroll-trigger" href="http://4semitech.com/">4SemiTechnology</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a onclick="window.location.href='#'" ><span class="glyphicon glyphicon-home"></span><font color="white"><b>&nbsp;Home</b></font></a></li>
+	  <li><a onclick="window.location.href='Homepage.html'" ><span class="glyphicon glyphicon-arrow-left"></span><font color="white"><b>&nbsp;Back </b></font></a></li>
+       <li><a onclick="window.location.href='#'"><span class="glyphicon glyphicon-log-in"></span><font color="white"><b>&nbsp;Logout</b> </font></a></li>
+		 
+      </ul>
+    </div>
+  </div>
+</nav>				
+	
+		
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+		
+		
+				
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 form-box">
+							<div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 class="text-center"><font color="black" size="8" style="Times New Roman"><b>REPORT UPLOAD</b></font></h1>
+							<hr>
+                            <div class="description">
+                            	
+                            </div>
+							
+                        </div>
+						
+                            <div class="form-bottom">
+			                    <form role="form" action="" method="post" class="login-form">
+			                    	
+									 
+  						</form>
+  <form>
+  <table class="table table-bordered" id="Table" width="500" border="2">
+  <thead>
+   <tr>
+    <th style="background:black" width="10%"></th>
+    <th style="background:black" width="10%"><font color="White">Module Id</font></th>
+	<th style="background:black" width="10%"><font color="White">Module Name</font></th>
+	<th style="background:black" width="10%"><font color="White">Task</font></th>
+	<th style="background:black" width="10%"><font color="White">Deadline</font></th>
+	<th style="background:black" width="10%"><font color="White">Status</font></th>
+	<th style="background:black" width="10%"><font color="White">Progress</font></th>
+   </tr>	
+  </thead>
+  <tbody>
+   <tr> 
+        <td style="background:white" width="10%"><input type="radio" onclick="move()"name="radio"></td>   
+        <td style="background:white" width="10%">Module Id</td>
+        <td style="background:white" width="10%">Module Name</td>
+        <td style="background:white" width="10%">Task</td>
+		<td style="background:white" width="10%">Deadline</td>
+		<td style="background:white" width="10%">Status</td>
+		<td style="background:white">
+            <div class='progress progress-striped' id="myProgress" style="width: 70%;">
+                <div class="progress-bar progress-bar-warning" id="myBar" role="progressbar"  style="width: 50%;">
+                    Progress
+                </div>
+            </div>
+        </td>
+    </tr>
+	<tr>
+	<td style="background:white"  width="10%"><input type="radio" onclick="move1()"name="radio"></td>  
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+        <td style="background:white">Task</td>
+		<td style="background:white">Deadline</td>
+		<td style="background:white">Status</td>
+        <td style="background:white">
+            <div class='progress progress-striped' id="myProgress1" style="width: 70%;">
+                <div class="progress-bar progress-bar-warning" id="myBar1" role="progressbar"  style="width: 50%;">
+                    Progress
+                </div>
+            </div>
+        </td>
+    </tr>
+	<tr>
+	<td  style="background:white" width="10%"><input type="radio" onclick="move2()"name="radio"></td>  
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+        <td style="background:white">Task</td>
+		<td style="background:white">Deadline</td>
+		<td style="background:white">Status</td>
+		<td style="background:white">
+            <div class='progress progress-striped' id="myProgress2" style="width: 70%;">
+                <div class="progress-bar progress-bar-warning" id="myBar2" role="progressbar" style="width: 50%;">
+                    Progress
+                </div>
+            </div>
+        </td>
+    </tr>
+	<tr>
+	<td  style="background:white" width="10%"><input type="radio" onclick="move3()" name="radio"></td>  
+        <td style="background:white">Module Id</td>
+        <td style="background:white">Module Name</td>
+        <td style="background:white">Task</td>
+		<td style="background:white">Deadline</td>
+		<td style="background:white">Status</td>
+		<td style="background:white">
+            <div class='progress progress-striped' id="myProgress3" style="width: 70%;">
+                <div class="progress-bar progress-bar-warning" id="myBar3" role="progressbar" style="width: 50%;">
+                    Progress
+                </div>
+            </div>
+        </td>
+    </tr>
+  </tbody>	
+</table>           
+</div>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function move1() {
+  var elem = document.getElementById("myBar1");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 50) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function move2() {
+  var elem = document.getElementById("myBar2");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 75) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+function move3() {
+  var elem = document.getElementById("myBar3");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<div class="form-group">
+<div class="container">
+<div class="form-group row">
+   <font color="black">
+    <label for="profilepic"  class="col-sm-3 col-form-label">Upload document:</label>
+	</font>
+	<div class="col-sm-3">
+	<font color="black">
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+	</font>
+	</div>
+	<div class="col-sm-6">
+	<font color="black">
+	<label for="projectname" class="col-sm-3 col-form-label">Reason:</label>
+	</font>
+	</div>
+	</div>
+	
+<div class="form-group row">
+    <font color="black">
+	<label for="projectname" class="col-sm-3 col-form-label">Dead line:</label>
+	</font>
+    <div class="col-sm-3">
+      <input type="date" id="startdate" class="form-control" ng-model="student.DoB" />
+    </div>
+	<div class="col-sm-3">
+	<textarea class="form-control" rows="3" align="right" id="Status" ></textarea>
+	</div>
+	</div>
+		
+	
+
+                    
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+  

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REPORT UPLOAD</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+<style>
+.btnn{
+border-radius:25px;
+background-color:  black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: gray;
+   text-align: center;
+}
+
+textarea{ 
+  width: 270px; 
+  min-width:270px; 
+  max-width:270px; 
+
+  height:50px; 
+  min-height:50px;  
+  max-height:50px;
+}
+</style>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand js-scroll-trigger" href="http://4semitech.com/"><font color="white"><b>4SemiTechnology</b></font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        </ul>
+		 <ul class="nav navbar-nav navbar-left">
+           <li class="active"><a href="#"><font color="white"><b>Home</b></font></a></li>
+         </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	  <li><a onclick="window.location.href='home1.html'" ><span class="glyphicon glyphicon-arrow-left" style="color:white"></span><font color="white"><b>&nbsp;Back </b></font></a></li>
+       <li><a onclick="window.location.href='#'"><span class="glyphicon glyphicon-log-in" style="color:white"></span><font color="white"><b>&nbsp;Logout</b> </font></a></li>
+		 
+      </ul>
+    </div>
+  </div>
+</nav>				
+<br><div class="page-header">
+<h1 class="text-center"><b><font color="Black" size="8" style="Times New Roman">UPLOAD REPORT</font></b></h1>
+</div>	
+		
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+		
+		
+				
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 form-box">
+							<div class="col-sm-8 col-sm-offset-2 text">
+                           
+						
+                            <div class="description">
+                            	
+                            </div>
+							
+                        </div>
+						
+                            <div class="form-bottom">
+			                    <form role="form" action="" method="post" class="login-form">
+			                    	
+									 
+  						</form>
+  <form>
+  
+  
+  
+  
+  
+	
+	<div class="form-group row">
+    <font color="black"><label for="projectfname" class="col-sm-3 col-form-label">Module Id:</label><b></font>
+    <div class="col-sm-5">
+	<input type="text"   class="form-control"  id="Moduleid" placeholder="ModuleId">
+    </div>
+	</div>
+	
+	<div class="form-group row">
+    <font color="black"><label for="projectname"class="col-sm-3 col-form-label">Module Name:</label></font>
+    <div class="col-sm-5">
+	  <input type="text"  class="form-control"  id="Modulename"  placeholder="ModuleName">
+    </div>
+	</div>
+	
+	<div class="form-group row">
+    <font color="black"><label for="projectname"class="col-sm-3 col-form-label">To:</label></font>
+    <div class="col-sm-5">
+	  <input type="text"  class="form-control"  id="Email"  placeholder="example@gmail.com" value=""readonly>
+    </div>
+	</div>
+	
+	<div class="form-group row">
+	<font color="black"><label for="projectname" class="col-sm-3 col-form-label">Task:</label></font>
+    <div class="col-sm-5">
+    <textarea class="form-control"  id="Task"  placeholder="task" rows=""></textarea>
+    </div>
+	</div>
+	
+	<div class="form-group row">
+	<font color="black"><label for="projectname" class="col-sm-3 col-form-label">Status:</label></font>
+    <div class="col-sm-5">
+	<textarea class="form-control"  id="Status"  placeholder="status"></textarea>
+    </div>
+	</div>
+	
+	<div class="form-group row">
+	<font color="black"><label for="projectname" class="col-sm-3 col-form-label">Comment:</label></font>
+    <div class="col-sm-5">
+	<textarea class="form-control"  id="Comment"  placeholder="comment" ></textarea>
+    </div>
+	</div>
+	
+	<div class="form-group row">
+	<font color="black"><label for="projectname" class="col-sm-3 col-form-label">Dead line:</label></font>
+    <div class="col-sm-5">
+      <input type="date" id="startdate" class="form-control" ng-model="student.DoB" />
+    </div>
+	</div>
+		
+	
+	<div class="form-group row">
+	                    
+	</div>
+	<div class="form-group row">
+    <font color="black"><label for="profilepic"  class="col-sm-3 col-form-label">Attach<br>document:</label></font>
+	<div class="col-sm-5">
+	<font color="black">
+	<span class="btn btn-default btn-file" >
+	<input id="input-2" name="input2[]" type="file" class="file" multiple data-show-upload="true" data-show-caption="true">
+	</span>
+	</font>
+	</div>
+  </div>
+ 
+</form>
+<center>
+<input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-success" />
+</center>
+
+
+<form>
+
+</form>
+			                        
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+<form>
+
+</form>
+<div class="footer">
+<font color="white"><p>Copyright &copy; 2018</p></font>
+</div>
+<div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Confirm Submit
+            </div>
+            <div class="modal-body">
+                Are you sure you want to submit the following details?
+
+                <!-- We display the details entered by the user here -->
+                <table class="table">
+                    <tr>
+                        <th>Module Id:</th>
+                        <td id="moduleid"></td>
+                    </tr>
+                    <tr>
+                        <th>Module Name:</th>
+                        <td id="modulename"></td>
+                    </tr>
+					 <tr>
+                        <th>To:</th>
+                        <td id="to"></td>
+                    </tr>					
+					<tr>
+                        <th>Deadline:</th>
+                        <td id="deadline"></td>
+                    </tr>
+					<tr>
+                        <th>Task:</th>
+                        <td id="task"></td>
+                    </tr>
+					<tr>
+                        <th>Status:</th>
+                        <td id="status"></td>
+                    </tr>
+					<tr>
+                        <th>Comment:</th>
+                        <td id="comment"></td>
+                    </tr>
+					<tr>
+					    <th>File:</th>
+                        <td id="file"></td>
+					</tr>
+                </table>
+
+            </div>
+
+  <div class="modal-footer">
+           <a href="#" id="button" class="btn btn-success success" data-dismiss="modal">Cancel</a>
+            <a href="#" id="submit" class="btn btn-success success">Submit</a>
+        </div>
+    </div>
+</div>
+<script>
+
+$('#submitBtn').click(function() {
+     /* when the button in the form, display the entered values in the modal */
+     $('#moduleid').text($('#Moduleid').val());
+     $('#modulename').text($('#Modulename').val());
+	 $('#to').text($('#Email').val());
+     $('#deadline').text($('#startdate').val());
+	 $('#task').text($('#Task').val());
+     $('#status').text($('#Status').val());
+	 $('#comment').text($('#Comment').val());
+	  $('#file').text($('#input-2').val());
+});
+
+$('#submit').click(function(){
+     /* when the submit button in the modal is clicked, submit the form */
+    alert('submitted');
+    $('#formfield').submit();
+});
+</script>
+<style>
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
+}
+</style>
+
+
+        <!-- Javascript -->
+        
+
+    </body>
+
+</html>

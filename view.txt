@@ -1,0 +1,28 @@
+<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-comment"  style="color:white"></span><font color="white"><b>&nbsp;ViewComment</b></font></a></li>
+<!-- Modal -->
+  <div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">View Comment</h4>
+        </div>
+          <div class="form-group">
+        <div class="modal-body">
+          <p>Comment</p>
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-success" data-dismiss="modal"><b>Ok</B></button>
+        </div>
+      </div>
+
+</div>
+</div>	
+</div>  
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
